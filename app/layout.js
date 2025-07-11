@@ -5,6 +5,8 @@ import { Provider } from 'react-redux';
 import { store } from "@/store/store";
 import { Sora } from "@next/font/google";
 import AuthProvider from "@/provider/AuthProvider";
+import { AuthProvider as SupabaseAuthProvider } from "@/context/AuthContext";
+import Context from "@/context/Context";
 
 import "bootstrap/scss/bootstrap.scss";
 
@@ -34,9 +36,13 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={sora.className} suppressHydrationWarning={true}>
         <Provider store={store}>
-          {/* <AuthProvider> */}
-            {children}
-          {/* </AuthProvider> */}
+          <Context>
+            <SupabaseAuthProvider>
+              <AuthProvider>
+                {children}
+              </AuthProvider>
+            </SupabaseAuthProvider>
+          </Context>
         </Provider>
       </body>
     </html>

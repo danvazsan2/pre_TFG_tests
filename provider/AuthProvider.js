@@ -1,38 +1,27 @@
 "use client"
 
 import { useEffect } from "react";
-import { useDispatch } from "react-redux";
 import { useRouter, usePathname } from "next/navigation";
-import { loginWithToken } from "@/store/slices/userSlice";
+import { useAuth } from "@/context/AuthContext";
 
 const AuthProvider = ({ children }) => {
-
     const pathname = usePathname();
-    const dispatch = useDispatch();
     const router = useRouter();
+    const { user, loading } = useAuth();
 
     useEffect(() => {
+        if (loading) return; // Wait for auth to load
+
+        // Allow access to signin and signup pages
         if (pathname.startsWith("/signin") || pathname.startsWith("/signup")) {
             return;
         }
 
-        const token = localStorage.getItem("jwtToken");
-
-        if (!token) {
-            router.push("/signin")
+        // Redirect to signin if user is not authenticated
+        if (!user) {
+            router.push("/signin");
         }
-        else {
-            dispatch(loginWithToken({ token }))
-                .unwrap() // Allows us to handle the fulfilled and rejected states
-                .then(() => {
-                    // router.push("/signin");
-                })
-                .catch((error) => {
-                    router.push("/signin");
-                    console.error(error);
-                });
-        }
-    }, [])
+    }, [user, loading, pathname, router]);
 
     return (
         <>
