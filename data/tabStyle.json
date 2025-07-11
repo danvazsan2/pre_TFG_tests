@@ -1,82 +1,13 @@
 {
   "TabStyleOne": [
     {
-      "title": "Video generating AI refers to artificial intelligence.",
-      "img": "/images/generator-img/chat-export-vedio.png",
-      "menuId": "video-generator",
-      "text": "Vedio Generator",
-      "target": "video-generate",
-      "iconImg": "/images/icons/video-g.png",
-      "isSelect": false,
-      "subItem": [
-        {
-          "text": "Transformer Models"
-        },
-        {
-          "text": "Conditional Generative Models"
-        },
-        {
-          "text": "Pre-trained Models"
-        },
-        {
-          "text": "Variational Autoencoders"
-        }
-      ]
-    },
-    {
-      "title": "Audio generating AI refers to artificial intelligence.",
-      "img": "/images/generator-img/chat-export-audio.png",
-      "menuId": "audio-generator",
-      "text": "Audio Generator",
-      "target": "audio-generate",
-      "iconImg": "/images/icons/audio-g.png",
-      "isSelect": true,
-      "subItem": [
-        {
-          "text": "Transformer Models"
-        },
-        {
-          "text": "Conditional Generative Models"
-        },
-        {
-          "text": "Pre-trained Models"
-        },
-        {
-          "text": "Variational Autoencoders"
-        }
-      ]
-    },
-    {
-      "title": "Photo generating AI refers to artificial intelligence.",
-      "img": "/images/generator-img/chat-export-photo.png",
-      "menuId": "photo-generator",
-      "text": "Photo Generator",
-      "target": "photo-generate",
-      "iconImg": "/images/icons/photo-g.png",
-      "isSelect": false,
-      "subItem": [
-        {
-          "text": "Transformer Models"
-        },
-        {
-          "text": "Conditional Generative Models"
-        },
-        {
-          "text": "Pre-trained Models"
-        },
-        {
-          "text": "Variational Autoencoders"
-        }
-      ]
-    },
-    {
       "title": "Text generating AI refers to artificial intelligence.",
       "img": "/images/generator-img/chat-export.png",
       "menuId": "text-generator",
       "text": "Text Generator",
       "target": "text-generate",
       "iconImg": "/images/icons/text-g.png",
-      "isSelect": false,
+      "isSelect": true,
       "subItem": [
         {
           "text": "Transformer Models"
@@ -99,6 +30,29 @@
       "text": "Code Generator",
       "target": "code-generate",
       "iconImg": "/images/icons/code-g.png",
+      "isSelect": false,
+      "subItem": [
+        {
+          "text": "Transformer Models"
+        },
+        {
+          "text": "Conditional Generative Models"
+        },
+        {
+          "text": "Pre-trained Models"
+        },
+        {
+          "text": "Variational Autoencoders"
+        }
+      ]
+    },
+    {
+      "title": "Email generating AI refers to artificial intelligence.",
+      "img": "/images/generator-img/chat-export-email.png",
+      "menuId": "email-generator",
+      "text": "Email Generator",
+      "target": "email-generate",
+      "iconImg": "/images/icons/email-g.png",
       "isSelect": false,
       "subItem": [
         {
