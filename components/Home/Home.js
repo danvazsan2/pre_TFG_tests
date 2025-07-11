@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Sal from "sal.js";
 
-import PricingData from "../../data/pricing.json";
+
 
 import SplitImg from "../../public/images/split/split-2.png";
 import SplitLogo from "../../public/images/split/split-2-logo.png";
@@ -27,7 +27,7 @@ import TabStyleOne from "../TabStyles/TabStyle-One";
 import ServiceStyleOne from "../Services/ServiceStyle-One";
 import AdvanceTab from "../TabStyles/AdvanceTab";
 import CtaOne from "../CallToActions/Cta-One";
-import Pricing from "../Pricing/Pricing";
+
 import ServiceTwo from "../Services/Service-Two";
 import Testimonial from "../Testimonials/Testimonial";
 import BrandTwo from "../Brands/Brand-Two";
@@ -316,68 +316,6 @@ const Home = () => {
       <div className="rainbow-rn-cta">
         <div className="container">
           <CtaOne />
-        </div>
-      </div>
-
-      <div className="aiwave-pricing-area wrapper rainbow-section-gap-big">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12">
-              <div
-                className="section-title text-center"
-                data-sal="slide-up"
-                data-sal-duration="400"
-                data-sal-delay="150"
-              >
-                <h4 className="subtitle">
-                  <span className="theme-gradient">Pricing</span>
-                </h4>
-                <h2 className="title w-600 mb--40">
-                  Pricing plans for everyone
-                </h2>
-              </div>
-
-              <nav className="aiwave-tab">
-                <div
-                  className="tab-btn-grp nav nav-tabs text-center justify-content-center"
-                  id="nav-tab"
-                  role="tablist"
-                >
-                  {PricingData &&
-                    PricingData.pricing.map((data, index) => (
-                      <button
-                        className={`nav-link ${data.isSelect ? "active" : ""}`}
-                        id={`${data.priceId}-tab`}
-                        data-bs-toggle="tab"
-                        data-bs-target={`#${data.priceId}`}
-                        type="button"
-                        role="tab"
-                        aria-controls={data.priceId}
-                        aria-selected="false"
-                        key={index}
-                      >
-                        {data.priceType}{" "}
-                        {data.discount ? (
-                          <span className="rainbow-badge-card badge-border">
-                            -{data.discount}%
-                          </span>
-                        ) : (
-                          ""
-                        )}
-                      </button>
-                    ))}
-                </div>
-              </nav>
-            </div>
-          </div>
-
-          <Pricing
-            parentClass="col-xl-4 col-lg-6 col-md-6 col-12 mt--40"
-            start={0}
-            end={3}
-            isBadge={true}
-            gap="mt_dec--40"
-          />
         </div>
       </div>
 

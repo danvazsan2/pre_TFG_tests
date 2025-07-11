@@ -20,25 +20,6 @@
       ]
     },
     {
-      "id": "pricing",
-      "text": "Getting started",
-      "isShow": false,
-      "list": [
-        {
-          "id": "example1",
-          "text": "Connect with AI text generator"
-        },
-        {
-          "id": "example2",
-          "text": "Get Personalized advices"
-        },
-        {
-          "id": "example3",
-          "text": "Get Personalized advices"
-        }
-      ]
-    },
-    {
       "id": "corefeature",
       "text": "Core Feature's",
       "isShow": false,

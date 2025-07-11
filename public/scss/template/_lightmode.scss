@@ -165,7 +165,6 @@ body {
         .breadcarumb-style-1,
         .rainbow-accordion-style.rainbow-accordion-03 .card .card-header,
         .rainbow-accordion-style.rainbow-accordion-04 .card,
-        .rainbow-pricing .pricing-table-inner,
         input[type="text"],
         input[type="password"],
         input[type="email"],
@@ -332,12 +331,9 @@ body.active-light-mode .section-title .subtitle,
 body.active-light-mode .card-box.card-style-1,
 body.active-light-mode .list-icon li .icon,
 body.active-light-mode .counter-style-2 .count-number,
-body.active-light-mode .rainbow-pricing.style-2 .pricing-table-inner,
 body.active-light-mode .rainbow-default-tab .rainbow-tab-content,
 body.active-light-mode .rainbow-default-tab .tab-button .react-tabs__tab.react-tabs__tab--selected,
 body.active-light-mode .advance-tab-button-1 .tab-button-list .tab-button::before,
-body.active-light-mode .advance-pricing .pricing-left,
-body.active-light-mode .rainbow-pricing.style-5 .pricing-table-inner,
 body.active-light-mode .about-style-5 .about-wrapper,
 body.active-light-mode .rainbow-sub-badge,
 body.active-light-mode .about-style-6 .wrapper::after,
@@ -374,12 +370,9 @@ body.active-light-mode .slider-style-2 .list-icon li .icon {
     background: var(--color-blackest);
 }
 
-body.active-light-mode .rainbow-pricing .pricing-table-inner::before,
 body.active-light-mode .rainbow-timeline-single.dark-line .rainbow-timeline .progress-dot .dot-level,
 body.active-light-mode .rainbow-timeline-single.dark-line .rainbow-timeline .progress-line .line-inner,
 body.active-light-mode .card-style-default.testimonial-style-one .inner .thumbnail::after,
-body.active-light-mode .advance-pricing,
-body.active-light-mode .rainbow-pricing.style-5 .pricing-table-inner .pricing,
 body.active-light-mode .popup-mobile-menu .inner .header-top .close-menu .close-button,
 body.active-light-mode .hamberger-button {
     background: #d8d8d8;
@@ -403,8 +396,7 @@ body.active-light-mode .rainbow-card {
     border-color: #f5f8fa;
 }
 
-body.active-light-mode .rainbow-pricing.active .pricing-table-inner .pricing-header,
-body.active-light-mode .rainbow-pricing .pricing-table-inner .pricing-header {
+body.active-light-mode .rainbow-accordion-style .card .card-header {
     border-color: #0000000a;
 }
 
@@ -445,10 +437,7 @@ body.active-light-mode .mainmenu-nav .mainmenu>li>a,
 body.active-light-mode .mainmenu-nav .mainmenu li.has-droupdown .submenu li a,
 body.active-light-mode .list-icon li,
 body.active-light-mode ul li,
-body.active-light-mode .rainbow-pricing.active .pricing-table-inner .pricing-body ul.list-style--1 li,
-body.active-light-mode .rainbow-pricing.active .pricing-table-inner .pricing-body ul.list-style--1 li svg,
 body.active-light-mode .advance-tab-button-1 .tab-button-list .tab-button .title,
-body.active-light-mode .advance-pricing .pricing-left .subtitle,
 body.active-light-mode .header-top-bar .header-left p a,
 body.active-light-mode .header-top-bar .header-right .address-content p a,
 body.active-light-mode .header-top-bar .social-default.icon-naked li a,
@@ -466,18 +455,11 @@ body.active-light-mode .card-box.card-style-1 .inner .content .description {
 body.active-light-mode .clltoaction-style-default.style-5 .content .subtitle,
 body.active-light-mode .rainbow-accordion-style .card .card-header button,
 body.active-light-mode .counter-style-2 .count-number,
-body.active-light-mode .rainbow-pricing .pricing-table-inner .pricing-header .pricing span.price,
-body.active-light-mode .rainbow-pricing.active .pricing-table-inner .pricing-header .title,
-body.active-light-mode .rainbow-pricing.active .pricing-table-inner .pricing-header .pricing span.currency,
-body.active-light-mode .rainbow-pricing.active .pricing-table-inner .pricing-header .pricing span.subtitle,
-body.active-light-mode .rainbow-pricing .pricing-table-inner .pricing-header .pricing span.subtitle,
 body.active-light-mode .rainbow-default-tab .tab-button .rainbow-tab-button button,
-body.active-light-mode .rainbow-pricing .pricing-table-inner .pricing-header .pricing span.currency,
 body.active-light-mode .card-style-default.testimonial-style-one .inner .thumbnail::after,
 body.active-light-mode .clltoaction-style-default.style-6 .content .title,
 body.active-light-mode .rainbow-splite-style .split-inner .title,
 body.active-light-mode .advance-tab-button-1 .tab-button-list .react-tabs__tab--selected .tab-button .title,
-body.active-light-mode .advance-pricing .pricing-left .price-wrapper .price-amount,
 body.active-light-mode .btn-read-more span,
 body.active-light-mode .section-title-2 .title,
 body.active-light-mode .box-grid-layout .rainbow-card .inner .content .title,
@@ -506,10 +488,6 @@ body.active-light-mode .header-transparent .mainmenu-nav .mainmenu>li>a {
 
 body.active-light-mode .header-top-bar .header-right .address-content p a:hover {
     color: var(--color-primary);
-}
-
-body.active-light-mode .rainbow-pricing .pricing-table-inner .pricing-header .pricing span.currency {
-    opacity: 0.8;
 }
 
 body.active-light-mode .mainmenu-nav .mainmenu li.has-droupdown .submenu li a:hover,

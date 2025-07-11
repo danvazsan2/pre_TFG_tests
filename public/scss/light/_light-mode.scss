@@ -918,22 +918,6 @@
         background: linear-gradient(to left, var(--color-primary-gradient-start), var(--color-primary-gradient-end));
     }
 
-    .rainbow-pricing.style-aiwave .pricing-table-inner {
-        background: var(--dark-bg-1);
-    }
-
-    .rainbow-pricing.style-aiwave::before {
-        background: var(--color-strock);
-    }
-
-    .rainbow-pricing.style-aiwave .pricing-header .icon {
-        background: var(--color-gray);
-    }
-
-    .rainbow-pricing.style-aiwave .pricing-header .pricing .price-text {
-        color: var(--color-black);
-    }
-
     .rainbow-gradient-arrows {
         button {
             &.slick-arrow {

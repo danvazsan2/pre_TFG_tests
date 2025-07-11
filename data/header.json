@@ -16,10 +16,7 @@
       "link": "/appearance",
       "text": "Appearance"
     },
-    {
-      "link": "/plans-billing",
-      "text": "Plans and Billing"
-    },
+
     {
       "link": "/sessions",
       "text": "Sessions"
@@ -31,12 +28,6 @@
       "isIcon": false,
       "isMenu": false,
       "text": "Home"
-    },
-    {
-      "link": "/pricing",
-      "isIcon": false,
-      "isMenu": false,
-      "text": "Main Tool"
     },
     {
       "link": "#",
@@ -64,12 +55,6 @@
           "badge": ""
         }
       ]
-    },
-    {
-      "link": "/pricing",
-      "isIcon": false,
-      "isMenu": false,
-      "text": "Pricing"
     }
   ],
   "smallNavItem": [
@@ -132,14 +117,7 @@
       "badge": "",
       "icon": "home"
     },
-    {
-      "link": "/plans-billing",
-      "isDisable": false,
-      "type": "setting",
-      "text": "Plans and Billing",
-      "badge": "",
-      "icon": "briefcase"
-    },
+
     {
       "link": "/sessions",
       "isDisable": false,
