@@ -1,5 +1,5 @@
 import BackToTop from "../backToTop";
-import ProfileDetailsPage from "./index";
+import UserProfileNew from "@/components/User/UserProfileNew";
 
 export const metadata = {
   title: "Profile Details - || AiWave - AI SaaS Website NEXTJS14 UI Kit",
@@ -9,7 +9,7 @@ export const metadata = {
 const ProfileDetailsLayout = () => {
   return (
     <>
-      <ProfileDetailsPage />
+      <UserProfileNew />
       <BackToTop />
     </>
   );

@@ -1,5 +1,5 @@
 import BackToTop from "../backToTop";
-import SigninPage from "./index";
+import SignInSupabaseNew from "@/components/SignIn/SignInSupabaseNew";
 
 export const metadata = {
   title: "Sign In - || AiWave - AI SaaS Website NEXTJS14 UI Kit",
@@ -9,7 +9,7 @@ export const metadata = {
 const SigninLayout = () => {
   return (
     <>
-      <SigninPage />
+      <SignInSupabaseNew />
       <BackToTop />
     </>
   );

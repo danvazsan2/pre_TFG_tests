@@ -1,0 +1,277 @@
+/* Custom styles for Supabase components */
+
+/* Animation for error and success messages */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Enhanced button styles */
+.btn-default {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-default:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-default:disabled {
+    transform: none;
+    box-shadow: none;
+}
+
+/* Enhanced input styles */
+.input-section input:focus {
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+    border-color: #4a90e2;
+}
+
+/* Profile page enhancements */
+.profile-details-tab .tab-button {
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.profile-details-tab .tab-button:hover {
+    background-color: rgba(74, 144, 226, 0.1);
+    transform: translateY(-1px);
+}
+
+.profile-details-tab .tab-button.active {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+/* Account info styling */
+.account-info-section {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.info-item:last-child {
+    border-bottom: none;
+}
+
+.info-item strong {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.info-item span {
+    color: #555;
+}
+
+.text-success {
+    color: #28a745 !important;
+}
+
+.text-warning {
+    color: #ffc107 !important;
+}
+
+/* Security section styling */
+.security-section {
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.security-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.action-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.action-info h6 {
+    margin: 0 0 5px 0;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.action-info p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* Form enhancements */
+.form-group label {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.form-group input[readonly],
+.form-group textarea[readonly] {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+    border-color: #4a90e2;
+}
+
+/* Button group styling */
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+.button-group .btn-default {
+    min-width: 140px;
+}
+
+/* Loading spinner */
+.loading-spinner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+}
+
+.loading-spinner i {
+    color: #4a90e2;
+    margin-bottom: 10px;
+}
+
+.loading-spinner p {
+    color: #666;
+    margin: 0;
+}
+
+/* Social buttons hover effects */
+.social-btn-grp .btn-default:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Client feedback area enhancements */
+.client-feedback-area {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px;
+    padding: 30px;
+    color: white;
+}
+
+.client-feedback-area .rating a {
+    color: #ffd700;
+    transition: all 0.3s ease;
+}
+
+.client-feedback-area .rating a:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+    .button-group {
+        flex-direction: column;
+    }
+    
+    .button-group .btn-default {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .action-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .info-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+    }
+}
+
+/* Dark mode support */
+.active-dark-mode .account-info-section {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+}
+
+.active-dark-mode .security-section {
+    background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);
+}
+
+.active-dark-mode .info-item strong {
+    color: #ecf0f1;
+}
+
+.active-dark-mode .info-item span {
+    color: #bdc3c7;
+}
+
+.active-dark-mode .action-info h6 {
+    color: #ecf0f1;
+}
+
+.active-dark-mode .action-info p {
+    color: #bdc3c7;
+}
+
+.active-dark-mode .action-item {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Enhanced hover effects */
+.btn-default:not(:disabled):hover {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+/* Form validation styles */
+.form-group input:invalid:not(:placeholder-shown),
+.form-group textarea:invalid:not(:placeholder-shown) {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.1);
+}
+
+.form-group input:valid:not(:placeholder-shown),
+.form-group textarea:valid:not(:placeholder-shown) {
+    border-color: #28a745;
+    box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.1);
+}

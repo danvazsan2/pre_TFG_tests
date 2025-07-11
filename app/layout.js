@@ -5,6 +5,8 @@ import { Provider } from 'react-redux';
 import { store } from "@/store/store";
 import { Sora } from "@next/font/google";
 import AuthProvider from "@/provider/AuthProvider";
+import { AuthProvider as SupabaseAuthProvider } from "@/context/AuthContext";
+import Context from "@/context/Context";
 
 import "bootstrap/scss/bootstrap.scss";
 
@@ -16,6 +18,7 @@ import "../node_modules/sal.js/dist/sal.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "react-tooltip/dist/react-tooltip.css";
+import "../public/css/supabase-custom.css";
 // ========= Plugins CSS END =========
 
 const sora = Sora({
@@ -34,9 +37,13 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={sora.className} suppressHydrationWarning={true}>
         <Provider store={store}>
-          {/* <AuthProvider> */}
-            {children}
-          {/* </AuthProvider> */}
+          <Context>
+            <SupabaseAuthProvider>
+              <AuthProvider>
+                {children}
+              </AuthProvider>
+            </SupabaseAuthProvider>
+          </Context>
         </Provider>
       </body>
     </html>
