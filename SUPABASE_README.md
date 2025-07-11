@@ -171,6 +171,7 @@ Para continuar desarrollando:
 ## 🎉 ¡Listo!
 
 Tu backend con Supabase está configurado y listo para usar. Los usuarios pueden registrarse, iniciar sesión y gestionar sus perfiles de manera segura.
+<<<<<<< HEAD
 
 ## 🎨 **Mejoras Visuales Implementadas**
 
@@ -236,3 +237,5 @@ Se agregó `supabase-custom.css` con:
 - Mejoras en formularios
 - Soporte para modo oscuro
 - Diseño responsive
+=======
+>>>>>>> b7a30559b3e69cc9333446017ae75f17bb6a4db8
