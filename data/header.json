@@ -16,7 +16,6 @@
       "link": "/appearance",
       "text": "Appearance"
     },
-
     {
       "link": "/sessions",
       "text": "Sessions"
@@ -117,7 +116,6 @@
       "badge": "",
       "icon": "home"
     },
-
     {
       "link": "/sessions",
       "isDisable": false,

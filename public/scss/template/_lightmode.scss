@@ -4,14 +4,17 @@
 .rainbow-back-top i {
     transition: 0.3s;
 }
+
 .rainbow-back-top:hover i {
     color: var(--color-primary) !important;
 }
+
 // Dark Style 
 body {
     &.active-light-mode {
         background-color: var(--color-white);
         color: #65676b;
+
         h1,
         h2,
         h3,
@@ -27,12 +30,12 @@ body {
         .social-default li a,
         .rbt-single-widget .title,
         .rbt-single-widget.widget_recent_entries .inner a,
-        .tagcloud a, 
-        .wp-block-tag-cloud a ,
+        .tagcloud a,
+        .wp-block-tag-cloud a,
         .rainbow-portfolio-details .content-left .single-list-wrapper .single-list label,
         .blog-details-content .category-meta span.text,
         .demo-slider-area.slider-style-1 .inner .title,
-        .rainbow-back-top svg ,
+        .rainbow-back-top svg,
         .popup-mobile-menu .inner .header-top .close-menu .close-button,
         .footer-style-default .footer-top .rainbow-footer-widget .title,
         .rainbow-call-to-action.style-8 .title,
@@ -43,7 +46,7 @@ body {
         }
 
 
-        .slider-style-1.variation-3 .inner .title span ,
+        .slider-style-1.variation-3 .inner .title span,
         .slider-style-1.variation-3 .inner .title {
             color: #181818 !important;
         }
@@ -54,7 +57,7 @@ body {
         }
 
 
-        .slider-style-8 .inner a.btn-default.btn-border, 
+        .slider-style-8 .inner a.btn-default.btn-border,
         .slider-style-8 .inner button.btn-default.btn-border {
             border-color: #d8d8d8;
             color: #65676b;
@@ -65,8 +68,8 @@ body {
             color: #65676b;
         }
 
-        .rainbow-slick-arrow.testimonial-activation button.slick-arrow.prev-arrow::before ,
-        .rainbow-slick-arrow.testimonial-activation button.slick-arrow.next-arrow::before{
+        .rainbow-slick-arrow.testimonial-activation button.slick-arrow.prev-arrow::before,
+        .rainbow-slick-arrow.testimonial-activation button.slick-arrow.next-arrow::before {
             filter: brightness(0);
         }
 
@@ -75,12 +78,12 @@ body {
         }
 
 
-        .rainbow-slick-arrow.testimonial-activation button.slick-arrow.prev-arrow:hover::before, 
+        .rainbow-slick-arrow.testimonial-activation button.slick-arrow.prev-arrow:hover::before,
         .rainbow-slick-arrow.testimonial-activation button.slick-arrow.next-arrow:hover::before {
             filter: brightness(1);
         }
 
-        .slider-style-8 .inner a.btn-default.btn-border:hover, 
+        .slider-style-8 .inner a.btn-default.btn-border:hover,
         .slider-style-8 .inner button.btn-default.btn-border:hover {
             color: #fff;
             border-color: transparent;
@@ -102,7 +105,7 @@ body {
             background: #d8d8d8;
         }
 
-        .mainmenu-nav .mainmenu li.with-megamenu .rainbow-megamenu .wrapper .mega-menu-item li a:hover, 
+        .mainmenu-nav .mainmenu li.with-megamenu .rainbow-megamenu .wrapper .mega-menu-item li a:hover,
         .mainmenu-nav .mainmenu li.with-megamenu .rainbow-megamenu .wrapper .mega-menu-item li a.active {
             background: #d8d8d8;
         }
@@ -131,8 +134,8 @@ body {
         .rbt-single-widget.widget_categories ul li span,
         .rbt-single-widget.widget_meta ul li span,
         .rbt-single-widget.widget_pages ul li span,
-        .rbt-single-widget.widget_nav_menu ul li span ,
-        .post-page-banner .rainbow-meta-list li a ,
+        .rbt-single-widget.widget_nav_menu ul li span,
+        .post-page-banner .rainbow-meta-list li a,
         .post-page-banner .rainbow-meta-list li,
         .breadcrumb-inner ul.page-list li.rainbow-breadcrumb-item.active,
         .slider-style-1.bg-transparent .inner .subtitle,
@@ -151,7 +154,7 @@ body {
             color: #65676b;
         }
 
-        .header-transparent.sticky .mainmenu-nav .mainmenu > li > a,
+        .header-transparent.sticky .mainmenu-nav .mainmenu>li>a,
         .clltoaction-style-default.style-7 .content .subtitle,
         .copyright-style-one .ft-menu li a,
         .footer-style-default .footer-top .rainbow-footer-widget .text-big {
@@ -178,17 +181,17 @@ body {
         .rbt-single-widget.widget_categories ul li+li,
         .rbt-single-widget.widget_meta ul li+li,
         .rbt-single-widget.widget_pages ul li+li,
-        .rbt-single-widget.widget_nav_menu ul li+li ,
-        .tagcloud a, 
+        .rbt-single-widget.widget_nav_menu ul li+li,
+        .tagcloud a,
         .wp-block-tag-cloud a,
         .section-title-2 .title,
-        .popup-mobile-menu .mainmenu li + li ,
+        .popup-mobile-menu .mainmenu li+li,
         .clltoaction-style-default.style-7 .content-wrapper,
         .copyright-style-one,
         .footer-style-default .newsletter-form .form-group input,
-        .newsletter-area .border-top-bottom ,
+        .newsletter-area .border-top-bottom,
         .rainbow-comment-form .inner .rnform-group textarea,
-        .rainbow-portfolio-details .content-left .single-list-wrapper .single-list + .single-list {
+        .rainbow-portfolio-details .content-left .single-list-wrapper .single-list+.single-list {
             border-color: #00000024;
         }
 
@@ -218,13 +221,13 @@ body {
         }
 
         .social-default li a:hover,
-        .tagcloud a:hover, 
+        .tagcloud a:hover,
         .wp-block-tag-cloud a:hover,
         .header-top-news .btn-read-more span {
             color: var(--color-white);
         }
 
-        .tagcloud a:hover, 
+        .tagcloud a:hover,
         .wp-block-tag-cloud a:hover {
             border-color: var(--color-primary);
         }
@@ -243,18 +246,18 @@ body {
             display: none;
         }
 
-        .footer-style-default .social-default li a ,
-        .copyright-style-one .social-default.color-lessdark li a ,
+        .footer-style-default .social-default li a,
+        .copyright-style-one .social-default.color-lessdark li a,
         .rainbow-newsletter-default .rainbow-newsletter .form-group input {
             background: #fff;
         }
 
-        .copyright-style-one .ft-menu li + li::after {
+        .copyright-style-one .ft-menu li+li::after {
             background: #c5c1c1;
         }
 
-        .copyright-style-one .ft-menu li a:hover ,
-        .footer-style-default .footer-top .rainbow-footer-widget .footer-link li a:hover{
+        .copyright-style-one .ft-menu li a:hover,
+        .footer-style-default .footer-top .rainbow-footer-widget .footer-link li a:hover {
             color: var(--color-primary);
         }
 
@@ -271,21 +274,23 @@ body {
             background-color: #eef2f3;
         }
 
-        .service-wrapper > [class*=col]:nth-child(4) .service.service__style--1.icon-circle-style .icon {
+        .service-wrapper>[class*=col]:nth-child(4) .service.service__style--1.icon-circle-style .icon {
             background-color: #eb008b24;
         }
+
         .logo a img.logo-light {
             display: none;
         }
+
         .rainbow-back-top i {
             color: #333;
         }
 
-        .service-wrapper > [class*=col]:nth-child(5) .service.service__style--1.icon-circle-style .icon {
+        .service-wrapper>[class*=col]:nth-child(5) .service.service__style--1.icon-circle-style .icon {
             background-color: #009aff29;
         }
-        
-        .service-wrapper > [class*=col]:nth-child(6) .service.service__style--1.icon-circle-style .icon {
+
+        .service-wrapper>[class*=col]:nth-child(6) .service.service__style--1.icon-circle-style .icon {
             background-color: #3000ff29;
         }
 
@@ -342,8 +347,8 @@ body.active-light-mode .mainmenu-nav .mainmenu li.with-megamenu .rainbow-megamen
 body.active-light-mode .social-default li a,
 body.active-light-mode .clltoaction-style-default.style-4 .content-wrapper,
 body.active-light-mode .rainbow-address,
-body.active-light-mode .rbt-single-widget .title ,
-body.active-light-mode .frame-image ,
+body.active-light-mode .rbt-single-widget .title,
+body.active-light-mode .frame-image,
 body.active-light-mode .rainbow-back-top,
 body.active-light-mode .popup-mobile-menu .inner,
 body.active-light-mode .rainbow-call-to-action.style-8,
@@ -464,7 +469,7 @@ body.active-light-mode .btn-read-more span,
 body.active-light-mode .section-title-2 .title,
 body.active-light-mode .box-grid-layout .rainbow-card .inner .content .title,
 body.active-light-mode .clltoaction-style-default.style-5 .content .title,
-body.active-light-mode .clltoaction-style-default.style-4 .content .title ,
+body.active-light-mode .clltoaction-style-default.style-4 .content .title,
 body.active-light-mode .hamberger-button {
     color: #181818;
 }
@@ -507,13 +512,13 @@ body.active-light-mode .logo-dark {
     display: block;
 }
 
-body.active-light-mode .slider-area.bg-transparent .inner a.btn-default.btn-border, 
+body.active-light-mode .slider-area.bg-transparent .inner a.btn-default.btn-border,
 body.active-light-mode .slider-area.bg-transparent .inner button.btn-default.btn-border {
     border-color: #00000024;
     color: #181818;
 }
 
-body.active-light-mode .slider-area.bg-transparent .inner a.btn-default.btn-border:hover, 
+body.active-light-mode .slider-area.bg-transparent .inner a.btn-default.btn-border:hover,
 body.active-light-mode .slider-area.bg-transparent .inner button.btn-default.btn-border:hover {
     color: var(--color-white);
 }
